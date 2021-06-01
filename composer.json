@@ -1,0 +1,21 @@
+{
+    "name": "student/install-wordpress",
+    "description": "wordpress custom install with composer",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+            }
+    ],
+    "require": {
+        "johnpbloch/wordpress": "^5.7"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "content/themes/{$name}": ["type:wordpress-theme"],
+            "content/plugins/{$name}": ["type:wordpress-plugin"]
+        }
+    }
+    
+}
