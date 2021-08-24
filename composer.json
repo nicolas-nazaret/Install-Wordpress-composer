@@ -1,14 +1,22 @@
 {
-    "name": "student/install-wordpress",
-    "description": "wordpress custom install with composer",
+    "name": "student/wordpress",
+    "description": "Installation de wordpress 5.8 par composer",
+    "authors": [
+        {
+            "name": "NicolasNazaret",
+            "email": "eminico.2801@hotmail.fr"
+        }
+    ],
     "repositories":[
         {
             "type":"composer",
             "url":"https://wpackagist.org"
-            }
+        }
     ],
     "require": {
-        "johnpbloch/wordpress": "^5.7"
+        "johnpbloch/wordpress": "^5.8",
+        "wpackagist-theme/twentytwenty": "^1.8",
+        "wpackagist-theme/twentytwentyone": "^1.4"
     },
     "extra": {
         "wordpress-install-dir": "wp",
@@ -17,5 +25,4 @@
             "content/plugins/{$name}": ["type:wordpress-plugin"]
         }
     }
-    
 }
