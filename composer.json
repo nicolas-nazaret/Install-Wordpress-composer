@@ -16,7 +16,8 @@
     "require": {
         "johnpbloch/wordpress": "^5.8",
         "wpackagist-theme/twentytwenty": "^1.8",
-        "wpackagist-theme/twentytwentyone": "^1.4"
+        "wpackagist-theme/twentytwentyone": "^1.4",
+        "wpackagist-plugin/fakerpress": "^0.5.1"
     },
     "extra": {
         "wordpress-install-dir": "wp",
